@@ -1,3 +1,8 @@
+# Desafío para Software Engineers
+
+#### Nombre postulante: Johan Steven Bayer Lamprea
+#### Link a la app en producción: [https://country-search-2022.netlify.app/](https://country-search-2022.netlify.app/)
+
 ### Pregunta
 La tabla que contiene la información correspondiente a la asistencia diaria de un niño en un colegio tiene 90 millones de filas. Todas las tablas del sistema existen en la misma BDD en MySQL. La lógica del backend que actualiza la información correspondiente al pasar la asistencia tiene un tiempo de servicio p95 de 10 segundos. El equipo está interesado en bajar este tiempo para mejorar la experiencia del usuario (y porque nos gusta pensar en Kimche como un Ferrari).
 ### Posibles Soluciones
