@@ -10,7 +10,7 @@ const Cards = ({ country, group }) => {
   return (
     <div className='container'>
       {group === "continent" ? <h4>{country.continent.name}</h4> 
-      : country.languages.length > 1 ? <h5>{country.languages.map((language) => < a key={language.code}>{language.name}/ </a> )}</h5> :
+      : country.languages.length > 1 ? <h5>{country.languages.map((language) => <span key={language.code}>{language.name}/ </span> )}</h5> :
       <h5>{language}</h5>
       } 
       
@@ -22,8 +22,7 @@ const Cards = ({ country, group }) => {
             <h6>Code: {country.code}</h6>
             <h6>Phone: {country.phone}</h6>
             <h6>Native: {country.native}</h6>
-            <h6>Currency: {country.currency}</h6>
-          
+            <h6>Currency: {country.currency}</h6>          
         </div>
       </div>
     </div>
