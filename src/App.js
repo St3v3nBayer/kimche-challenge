@@ -5,20 +5,12 @@ import { ApolloProvider } from "@apollo/react-hooks";
 import Home from "./pages/Home";
 
 const client = new ApolloClient({
-  uri: "https://48p1r2roz4.sse.codesandbox.io",
+  uri: "https://countries.trevorblades.com/",
 });
 
 const App = () => (
   <ApolloProvider client={client}>
-    <div>
-      <Home />
-      {/* <h2>
-        My first Apollo app{" "}
-        <span role="img" aria-label="Rocket">
-          🚀
-        </span>
-      </h2> */}
-    </div>
+    <Home />
   </ApolloProvider>
 );
 export default App;
