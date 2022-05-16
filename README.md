@@ -1,4 +1,10 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Pregunta
+La tabla que contiene la información correspondiente a la asistencia diaria de un niño en un colegio tiene 90 millones de filas. Todas las tablas del sistema existen en la misma BDD en MySQL. La lógica del backend que actualiza la información correspondiente al pasar la asistencia tiene un tiempo de servicio p95 de 10 segundos. El equipo está interesado en bajar este tiempo para mejorar la experiencia del usuario (y porque nos gusta pensar en Kimche como un Ferrari).
+### Posibles Soluciones
+He desarrollado con más experiencia consultas a bases de datos no relacionales (mongodb). Por lo que he leído y experimentado, MongoDb responde eficazmente con grandes volumenes de información, yo propongo para la solucion del problema, almacenar las asistencias en una bd mongodb, relacionando el id del niño. De tal manera podemos trabajar con bases de datos hibridas y aprovechando el potencial que cada una nos ofrece.
+Para trabajar solo con la bd Mysql se propone aplicar buenas practicas en las consultas. Modificar las consultas de manera muy especifica para retornar solo la informacion requerida.
+
+
 
 ## Available Scripts
 
