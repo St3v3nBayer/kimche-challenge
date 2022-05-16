@@ -10,6 +10,7 @@ query {
           name
         }
         languages{
+          code
           name
         }
         phone
